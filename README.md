@@ -1,9 +1,6 @@
 ﻿# Materiales para Primaria
 
-Juegos y materiales educativos para niños de primaria.
+Juegos y programas educativos para niños de primaria, de uso público.
 
-- materialdocente/ - materiales para docentes
-- materialalumno/ - materiales para alumnos
-- materialdoc/
-- materialalum/
-
+- `materialdocente/` — código de juegos y herramientas para docentes
+- `materialalumno/` — código de juegos y actividades para alumnos
