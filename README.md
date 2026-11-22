@@ -1,6 +1,10 @@
-﻿# Materiales para Primaria
+﻿<p align="center"><img src="marca/logo.png" alt="SM - Tu necesidad, mi prioridad" width="420"></p>
 
-Juegos y programas educativos para niños de primaria, de uso público.
+# Materiales para Primaria
 
-- `materialdocente/` — código de juegos y herramientas para docentes
-- `materialalumno/` — código de juegos y actividades para alumnos
+Juegos y programas educativos de uso público para niños de 1.º a 6.º de primaria. Están alineados al Programa Curricular de Educación Primaria (EBR, Perú).
+
+- `materialalumno/grado-1` … `grado-6`: juegos y actividades para alumnos
+- `materialdocente/grado-1` … `grado-6`: herramientas para docentes
+
+En [METODO.md](METODO.md) se explica cómo está organizado y qué métodos se usan.
