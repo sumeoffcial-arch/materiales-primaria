@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560">
+  <defs>
+    <style>
+      @font-face { font-family: 'LoraSM'; font-style: italic; font-weight: 500; src: url(data:font/woff2;base64,{{FONT}}) format('woff2'); }
+      .frase { font-family: 'LoraSM', Georgia, serif; font-style: italic; font-weight: 500; }
+
+      /* La laptop rebota suavemente */
+      .laptop { animation: rebote 3s ease-in-out infinite; transform-origin: 450px 280px; }
+      @keyframes rebote { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-8px) } }
+
+      /* La firma se escribe sola y luego brilla */
+      .firma { stroke-dasharray: 1; stroke-dashoffset: 1; animation: escribir 2.6s ease-in-out .3s forwards; }
+      @keyframes escribir { to { stroke-dashoffset: 0 } }
+      .brillo { stroke-dasharray: 1; stroke-dashoffset: 1; animation: escribir 2.6s ease-in-out .3s forwards, latido 2.4s ease-in-out 3s infinite; }
+      @keyframes latido { 0%,100% { opacity: .55 } 50% { opacity: 1 } }
+
+      /* Estrellita que va escribiendo la firma */
+      .lapiz { offset-path: path('{{PATH}}'); offset-rotate: 0deg; offset-distance: 0%; animation: recorrer 2.6s ease-in-out .3s forwards, apagar .4s 2.9s forwards; }
+      @keyframes recorrer { to { offset-distance: 100% } }
+      @keyframes apagar { to { opacity: 0 } }
+
+      /* Estrellas y puntos que titilan */
+      .titila { animation: titilar 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .t2 { animation-delay: .6s } .t3 { animation-delay: 1.2s } .t4 { animation-delay: .3s } .t5 { animation-delay: .9s }
+      @keyframes titilar { 0%,100% { transform: scale(1) rotate(0); opacity: 1 } 50% { transform: scale(.55) rotate(25deg); opacity: .6 } }
+
+      /* La cinta de la frase se mece */
+      .cinta { animation: mecer 4s ease-in-out infinite; transform-origin: 450px 490px; }
+      @keyframes mecer { 0%,100% { transform: rotate(0) } 25% { transform: rotate(-1deg) } 75% { transform: rotate(1deg) } }
+
+      @media (prefers-reduced-motion: reduce) {
+        .laptop, .cinta, .titila, .brillo { animation: none }
+        .firma, .brillo { stroke-dashoffset: 0 }
+        .lapiz { display: none }
+      }
+    </style>
+    <linearGradient id="marco" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5FF0E0"/>
+      <stop offset="1" stop-color="#1BBFB0"/>
+    </linearGradient>
+    <linearGradient id="pantalla" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A2E33"/>
+      <stop offset="1" stop-color="#0F4A4D"/>
+    </linearGradient>
+    <linearGradient id="cinta" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7FF5E8"/>
+      <stop offset=".5" stop-color="#4FE3D3"/>
+      <stop offset="1" stop-color="#26C6B7"/>
+    </linearGradient>
+    <radialGradient id="chispa">
+      <stop offset="0" stop-color="#FFF7C2" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#FFF7C2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fondoAvatar" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0FFFC"/>
+      <stop offset="1" stop-color="#C9F5EE"/>
+    </linearGradient>
+    <filter id="neon" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="sombra" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#0B5D57" flood-opacity=".3"/>
+    </filter>
+  </defs>
+
+  <g class="laptop">
+    <g filter="url(#sombra)">
+      <rect x="150" y="20" width="600" height="400" rx="46" fill="url(#marco)"/>
+      <rect x="178" y="48" width="544" height="344" rx="28" fill="url(#pantalla)"/>
+    </g>
+
+    <!-- Estrellas de colores -->
+    <path class="titila" d="M240 95 l7 15 16 2 -12 11 3 16 -14 -8 -14 8 3 -16 -12 -11 16 -2z" fill="#FFD23F"/>
+    <path class="titila t2" d="M262 215 l6 12 13 2 -10 9 3 13 -12 -7 -12 7 3 -13 -10 -9 13 -2z" fill="#FF8FB1"/>
+    <path class="titila t3" d="M655 85 l4 9 10 1 -7 7 2 10 -9 -5 -9 5 2 -10 -7 -7 10 -1z" fill="#8FB8FF"/>
+    <circle class="titila t4" cx="225" cy="330" r="7" fill="#8FB8FF"/>
+    <circle class="titila t5" cx="690" cy="200" r="6" fill="#FFD23F"/>
+    <circle class="titila t2" cx="300" cy="150" r="4" fill="#FF8FB1"/>
+    <circle class="titila t3" cx="610" cy="355" r="5" fill="#FFD23F"/>
+
+    <!-- Firma Sm: halo neón + trazo -->
+    <path class="brillo" pathLength="1" d="{{PATH}}" fill="none" stroke="#3FF5E1" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" filter="url(#neon)"/>
+    <path class="firma" pathLength="1" d="{{PATH}}" fill="none" stroke="#7FFFF0" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="firma" pathLength="1" d="{{PATH}}" fill="none" stroke="#E8FFFC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="lapiz">
+      <circle r="18" fill="url(#chispa)"/>
+      <path d="M0 -11 l3 7 8 1 -6 5 2 8 -7 -4 -7 4 2 -8 -6 -5 8 -1z" fill="#FFD23F"/>
+    </g>
+  </g>
+
+  <!-- Cinta con la frase (el avatar la quita) -->
+  <g class="cinta" id="cinta-frase" filter="url(#sombra)">
+    <path d="M40 438 H860 L835 488 L860 538 H40 L65 488 Z" fill="url(#cinta)"/>
+    <text class="frase" x="450" y="502" font-size="40" text-anchor="middle" fill="#0B3B3E">Tu necesidad, mi prioridad</text>
+  </g>
+</svg>

@@ -1,58 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&amp;display=block');
-      .letra { font-family: 'Fredoka', 'Comic Sans MS', sans-serif; font-weight: 700; paint-order: stroke; stroke: #ffffff; stroke-width: 14; stroke-linejoin: round; }
-      .frase { font-family: 'Fredoka', 'Comic Sans MS', sans-serif; font-weight: 600; }
+      @font-face { font-family: 'LoraSM'; font-style: italic; font-weight: 500; src: url(data:font/woff2;base64,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) format('woff2'); }
+      .frase { font-family: 'LoraSM', Georgia, serif; font-style: italic; font-weight: 500; }
+
+      /* La laptop rebota suavemente */
+      .laptop { animation: rebote 3s ease-in-out infinite; transform-origin: 450px 280px; }
+      @keyframes rebote { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-8px) } }
+
+      /* La firma se escribe sola y luego brilla */
+      .firma { stroke-dasharray: 1; stroke-dashoffset: 1; animation: escribir 2.6s ease-in-out .3s forwards; }
+      @keyframes escribir { to { stroke-dashoffset: 0 } }
+      .brillo { stroke-dasharray: 1; stroke-dashoffset: 1; animation: escribir 2.6s ease-in-out .3s forwards, latido 2.4s ease-in-out 3s infinite; }
+      @keyframes latido { 0%,100% { opacity: .55 } 50% { opacity: 1 } }
+
+      /* Estrellita que va escribiendo la firma */
+      .lapiz { offset-path: path('M235 345 C300 320 400 240 450 150 C468 115 462 88 442 96 C420 106 428 150 458 185 C492 225 498 285 440 318 C405 338 385 330 392 318 C400 304 450 300 495 318 C505 290 512 255 528 250 C545 246 550 268 550 290 C550 310 549 322 550 332 C555 290 568 252 588 250 C606 248 610 268 610 290 C610 310 608 322 612 332 C618 348 648 342 668 318'); offset-rotate: 0deg; offset-distance: 0%; animation: recorrer 2.6s ease-in-out .3s forwards, apagar .4s 2.9s forwards; }
+      @keyframes recorrer { to { offset-distance: 100% } }
+      @keyframes apagar { to { opacity: 0 } }
+
+      /* Estrellas y puntos que titilan */
+      .titila { animation: titilar 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .t2 { animation-delay: .6s } .t3 { animation-delay: 1.2s } .t4 { animation-delay: .3s } .t5 { animation-delay: .9s }
+      @keyframes titilar { 0%,100% { transform: scale(1) rotate(0); opacity: 1 } 50% { transform: scale(.55) rotate(25deg); opacity: .6 } }
+
+      /* La cinta de la frase se mece */
+      .cinta { animation: mecer 4s ease-in-out infinite; transform-origin: 450px 490px; }
+      @keyframes mecer { 0%,100% { transform: rotate(0) } 25% { transform: rotate(-1deg) } 75% { transform: rotate(1deg) } }
+
+      @media (prefers-reduced-motion: reduce) {
+        .laptop, .cinta, .titila, .brillo { animation: none }
+        .firma, .brillo { stroke-dashoffset: 0 }
+        .lapiz { display: none }
+      }
     </style>
-    <linearGradient id="marco" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#5FE3D6"/>
-      <stop offset="1" stop-color="#14B3A6"/>
+    <linearGradient id="marco" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5FF0E0"/>
+      <stop offset="1" stop-color="#1BBFB0"/>
     </linearGradient>
     <linearGradient id="pantalla" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#F1FFFD"/>
-      <stop offset="1" stop-color="#BFF3EC"/>
+      <stop offset="0" stop-color="#0A2E33"/>
+      <stop offset="1" stop-color="#0F4A4D"/>
     </linearGradient>
-    <linearGradient id="base" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#7DEBE0"/>
-      <stop offset="1" stop-color="#22BFB2"/>
+    <linearGradient id="cinta" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7FF5E8"/>
+      <stop offset=".5" stop-color="#4FE3D3"/>
+      <stop offset="1" stop-color="#26C6B7"/>
     </linearGradient>
-    <filter id="sombra" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#0B5D57" flood-opacity="0.25"/>
+    <radialGradient id="chispa">
+      <stop offset="0" stop-color="#FFF7C2" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#FFF7C2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fondoAvatar" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0FFFC"/>
+      <stop offset="1" stop-color="#C9F5EE"/>
+    </linearGradient>
+    <filter id="neon" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="sombra" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#0B5D57" flood-opacity=".3"/>
     </filter>
   </defs>
 
-  <!-- Pantalla de la laptop -->
-  <g filter="url(#sombra)">
-    <rect x="150" y="30" width="600" height="410" rx="48" fill="url(#marco)"/>
-    <rect x="182" y="62" width="536" height="346" rx="30" fill="url(#pantalla)"/>
-    <!-- cámara -->
-    <circle cx="450" cy="46" r="7" fill="#0E8C83"/>
+  <g class="laptop">
+    <g filter="url(#sombra)">
+      <rect x="150" y="20" width="600" height="400" rx="46" fill="url(#marco)"/>
+      <rect x="178" y="48" width="544" height="344" rx="28" fill="url(#pantalla)"/>
+    </g>
+
+    <!-- Estrellas de colores -->
+    <path class="titila" d="M240 95 l7 15 16 2 -12 11 3 16 -14 -8 -14 8 3 -16 -12 -11 16 -2z" fill="#FFD23F"/>
+    <path class="titila t2" d="M262 215 l6 12 13 2 -10 9 3 13 -12 -7 -12 7 3 -13 -10 -9 13 -2z" fill="#FF8FB1"/>
+    <path class="titila t3" d="M655 85 l4 9 10 1 -7 7 2 10 -9 -5 -9 5 2 -10 -7 -7 10 -1z" fill="#8FB8FF"/>
+    <circle class="titila t4" cx="225" cy="330" r="7" fill="#8FB8FF"/>
+    <circle class="titila t5" cx="690" cy="200" r="6" fill="#FFD23F"/>
+    <circle class="titila t2" cx="300" cy="150" r="4" fill="#FF8FB1"/>
+    <circle class="titila t3" cx="610" cy="355" r="5" fill="#FFD23F"/>
+
+    <!-- Firma Sm: halo neón + trazo -->
+    <path class="brillo" pathLength="1" d="M235 345 C300 320 400 240 450 150 C468 115 462 88 442 96 C420 106 428 150 458 185 C492 225 498 285 440 318 C405 338 385 330 392 318 C400 304 450 300 495 318 C505 290 512 255 528 250 C545 246 550 268 550 290 C550 310 549 322 550 332 C555 290 568 252 588 250 C606 248 610 268 610 290 C610 310 608 322 612 332 C618 348 648 342 668 318" fill="none" stroke="#3FF5E1" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" filter="url(#neon)"/>
+    <path class="firma" pathLength="1" d="M235 345 C300 320 400 240 450 150 C468 115 462 88 442 96 C420 106 428 150 458 185 C492 225 498 285 440 318 C405 338 385 330 392 318 C400 304 450 300 495 318 C505 290 512 255 528 250 C545 246 550 268 550 290 C550 310 549 322 550 332 C555 290 568 252 588 250 C606 248 610 268 610 290 C610 310 608 322 612 332 C618 348 648 342 668 318" fill="none" stroke="#7FFFF0" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="firma" pathLength="1" d="M235 345 C300 320 400 240 450 150 C468 115 462 88 442 96 C420 106 428 150 458 185 C492 225 498 285 440 318 C405 338 385 330 392 318 C400 304 450 300 495 318 C505 290 512 255 528 250 C545 246 550 268 550 290 C550 310 549 322 550 332 C555 290 568 252 588 250 C606 248 610 268 610 290 C610 310 608 322 612 332 C618 348 648 342 668 318" fill="none" stroke="#E8FFFC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="lapiz">
+      <circle r="18" fill="url(#chispa)"/>
+      <path d="M0 -11 l3 7 8 1 -6 5 2 8 -7 -4 -7 4 2 -8 -6 -5 8 -1z" fill="#FFD23F"/>
+    </g>
   </g>
 
-  <!-- Decoraciones -->
-  <g>
-    <path d="M250 120 l9 19 21 3 -15 15 4 21 -19 -10 -19 10 4 -21 -15 -15 21 -3z" fill="#FFD23F"/>
-    <path d="M685 330 l7 14 15 2 -11 11 3 15 -14 -7 -14 7 3 -15 -11 -11 15 -2z" fill="#FFD23F"/>
-    <circle cx="660" cy="118" r="13" fill="#FF8FB1"/>
-    <circle cx="232" cy="330" r="11" fill="#7C9CFF"/>
-    <circle cx="690" cy="170" r="7" fill="#7C9CFF"/>
-    <circle cx="275" cy="370" r="6" fill="#FF8FB1"/>
-    <path d="M610 92 q10 -14 20 0 q10 14 20 0" fill="none" stroke="#14B3A6" stroke-width="6" stroke-linecap="round"/>
+  <!-- Cinta con la frase (el avatar la quita) -->
+  <g class="cinta" id="cinta-frase" filter="url(#sombra)">
+    <path d="M40 438 H860 L835 488 L860 538 H40 L65 488 Z" fill="url(#cinta)"/>
+    <text class="frase" x="450" y="502" font-size="40" text-anchor="middle" fill="#0B3B3E">Tu necesidad, mi prioridad</text>
   </g>
-
-  <!-- Letras SM -->
-  <g filter="url(#sombra)">
-    <text class="letra" x="318" y="330" font-size="250" fill="#FF7A45" transform="rotate(-8 360 250)">S</text>
-    <text class="letra" x="452" y="335" font-size="250" fill="#6C5CE7" transform="rotate(6 540 250)">m</text>
-  </g>
-  <!-- Sonrisa debajo de las letras -->
-  <path d="M370 372 q80 34 160 0" fill="none" stroke="#FF7A45" stroke-width="10" stroke-linecap="round"/>
-
-  <!-- Base de la laptop con la frase -->
-  <g filter="url(#sombra)">
-    <path d="M60 462 h780 a14 14 0 0 1 13 19 l-26 72 a24 24 0 0 1 -22 16 H95 a24 24 0 0 1 -22 -16 l-26 -72 a14 14 0 0 1 13 -19z" fill="url(#base)"/>
-    <rect x="390" y="462" width="120" height="14" rx="7" fill="#0E8C83" opacity="0.35"/>
-  </g>
-  <text class="frase" x="450" y="538" font-size="44" text-anchor="middle" fill="#0B4F4A">Tu necesidad, <tspan fill="#5B3FD1">mi prioridad</tspan></text>
 </svg>
