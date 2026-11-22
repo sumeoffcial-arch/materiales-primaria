@@ -1,4 +1,4 @@
-﻿<p align="center"><img src="marca/logo.png" alt="SM - Tu necesidad, mi prioridad" width="420"></p>
+﻿<p align="center"><img src="marca/logo.svg" alt="SM - Tu necesidad, mi prioridad" width="420"></p>
 
 # Materiales para Primaria
 
